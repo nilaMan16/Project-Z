@@ -9,7 +9,8 @@
 /* General styles */
 body {
     line-height: 1.6;
-    background-color:#202e3a; 
+    background-color: #202e3a;
+    transition: background-color 0.3s;
 }
 
 a {
@@ -20,15 +21,17 @@ a {
 h1, h2 {
     margin-bottom: 10px;
     color: #ffffff;
+    transition: color 0.3s;
 }
 
 p, li {
     color: #ffffff;
+    transition: color 0.3s;
 }
 
 /* Navbar */
 .header {
-    background-color:black;
+    background-color: black;
     color: #fff;
     padding: 20px;
 }
@@ -42,10 +45,10 @@ p, li {
 }
 
 .logo {
-    background-image:url(./logo.png);
-    background-size:cover;
-    height:50px;
-    width:100%;
+    background-image: url(./logo.png);
+    background-size: cover;
+    height: 50px;
+    width: 100%;
 }
 
 .nav-links {
@@ -58,40 +61,51 @@ p, li {
     color: #fff;
     padding: 8px 15px;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .nav-links a:hover {
     background-color: #555;
+    color: #ffcc00;
 }
 
 /* Section styles */
 .section {
     padding: 40px 20px;
-    max-width: 800px; 
+    max-width: 800px;
     margin: 0 auto;
     text-align: center;
     color: black;
-   
-   
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.section:hover {
+    background-color: #f5f5f5;
+    color: #000;
 }
 
 .home {
-    background-color: hex#202e3a;
+    background-color: #202e3a;
 }
 
 .services ul {
     list-style-type: none;
     padding: 0;
     margin-top: 20px;
-    color:white;
+    color: white;
+    transition: color 0.3s;
 }
 
 .services li {
-    background-color:rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.services li:hover {
+    background-color: #333;
 }
 
 /* Contact form styles */
@@ -105,6 +119,7 @@ p, li {
 .contact-form label {
     font-weight: bold;
     color: #fff;
+    transition: color 0.3s;
 }
 
 .contact-form input,
@@ -113,6 +128,13 @@ p, li {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #555;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form button {
@@ -122,11 +144,12 @@ p, li {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .contact-form button:hover {
     background-color: #555;
+    transform: scale(1.05);
 }
 
 /* Footer */
@@ -136,6 +159,11 @@ p, li {
     text-align: center;
     padding: 20px;
     position: relative;
+    transition: background-color 0.3s;
+}
+
+.footer:hover {
+    background-color: #555;
 }
 
 .chatbot-iframe {
@@ -144,6 +172,7 @@ p, li {
     max-width: 1200px;
     border: none;
     margin-top: 20px;
+    transition: height 0.3s;
 }
 
 /* Responsive design */
