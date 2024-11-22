@@ -66,7 +66,7 @@ p, li {
 
 .nav-links a:hover {
     background-color: #555;
-    color: #ffcc00;
+    color: #000;
 }
 
 /* Section styles */
@@ -153,6 +153,7 @@ p, li {
 .contact-form button:hover {
     background-color: #555;
     transform: scale(1.05);
+    color: #000;
 }
 
 /* Footer */
@@ -167,6 +168,7 @@ p, li {
 
 .footer:hover {
     background-color: #555;
+    color: #000;
 }
 
 .chatbot-iframe {
